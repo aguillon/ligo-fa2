@@ -55,10 +55,6 @@ let transfer (t : TZIP12.transfer) (s : storage) : ret =
   unlift (MultiAssetExtendable.transfer t (lift s))
 
 [@entry]
-let balance_of (b : TZIP12.balance_of) (s : storage) : ret =
-  unlift (MultiAssetExtendable.balance_of b (lift s))
-
-[@entry]
 let update_operators (updates : TZIP12.update_operators) (s : storage) : ret =
   unlift (MultiAssetExtendable.update_operators updates (lift s))
 
